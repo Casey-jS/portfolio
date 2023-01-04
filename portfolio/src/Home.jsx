@@ -29,17 +29,17 @@ export default function Home(){
             <Container className='position-absolute' style={{maxWidth: "100%", maxHeight: "100%"}}>
                 <Row className='justify-content-md-center'>
                     <Col>
-                        <div className='text-left text-white'>
+                        <div className='text-center text-white'>
                             <p style={{fontWeight: 'bold', fontSize: 30}}>Hi, I'm</p>
                             <p style={{fontWeight: 'bold', fontSize: 70}}>Casey Sytsema</p>
                         </div>
                     </Col>
+                </Row>         
+                <Row>
                     <Col className='text-center'>
-                        <img className='mt-10' src="headshot.jpg" style={{width: "10vw"}} />
+                        <img className='mt-10' src="headshot.jpg" style={{width: "20vw"}} />
                     </Col>
-
                 </Row>
-                
                 <Row>
                     <Col>
                         <SchoolCard />
