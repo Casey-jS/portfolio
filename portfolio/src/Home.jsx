@@ -1,7 +1,24 @@
 import React from 'react'
 import {Card, Col, Row, Container, ListGroup} from 'react-bootstrap'
-import background from './images/bg.jpg'
 
+
+function Banner(){
+    return <>
+        <div className="position-absolute banner">
+            <span className="bannerLeft">
+                {["python", "c", "java", "cpp", "swift"].map((image) => (
+                    <img className='logo' src={image + ".png"} />
+                ))}
+             </span>
+            <span className='bannerRight'>
+                {["react", "javascript", "flask", "css-html", "bootstrap"].map((image) => (
+                    <img className={image + ' logo'} src={image + ".png"} />
+                ))}
+             </span>
+        </div>
+        
+    </>
+}
 
 function SchoolCard(){
     return <>
@@ -30,21 +47,20 @@ export default function Home(){
                 <Row className='justify-content-md-center'>
                     <Col>
                         <div className='text-center text-white'>
-                            <p style={{fontWeight: 'bold', fontSize: 30}}>Hi, I'm</p>
+                            <p style={{fontWeight: 'bold', fontSize: 40}}>Hi, I'm</p>
                             <p style={{fontWeight: 'bold', fontSize: 70}}>Casey Sytsema</p>
                         </div>
                     </Col>
                 </Row>         
-                <Row>
-                    <Col className='text-center'>
-                        <img className='mt-10' src="headshot.jpg" style={{width: "20vw"}} />
-                    </Col>
+                <Row className='justify-content-md-center'>
+                    <Banner />
+                    <img className='headshot' src="headshot.jpg" />
                 </Row>
                 <Row>
-                    <Col>
-                        <SchoolCard />
-                    </Col>
+                    <label for="bannerRight" className="text-left text-white" style={{fontWeight: 'bold', fontSize: 30}}>Backend Software Developer</label>
+                    <label for="bannerLeft" className="text-right" style={{fontWeight: 'bold', fontSize: 30}}>Full Stack Web Developer</label>
                 </Row>
+
             </Container>
         </div>
         

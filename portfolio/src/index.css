@@ -2,5 +2,35 @@
     background: url("./images/bg.jpg") repeat;
     height: 200vh;
     width: 100vw;
-
+    z-index: -1;
 }
+
+.banner{
+    background: rgb(26, 25, 25);
+    height: 150px;
+    width: 100vw;
+    z-index: 1;
+    margin-top: 40px;
+}
+
+.headshot{
+    width: 20vw;
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+
+
+.bannerRight{
+    margin-left: 18vw;
+}
+
+
