@@ -99,6 +99,7 @@
     background: transparent;
     border: 2px solid black;
     width: 30vw;
+    margin-left: 1vw;
 }
 
 .about-card{
@@ -108,7 +109,7 @@
     width: 35vw;
     height: 70vh;
     margin-top: 40vh;
-    margin-left: 2vw;
+    margin-left: 1vw;
     color: white;
 }
 
@@ -116,10 +117,10 @@
     border: 2px solid black;
     display: inline-block;
     background: transparent;
-    width: 30vw;
+    width: 31vw;
     color: white;
     margin-top: 30vh;
-    margin-left: 2vw;
+    margin-left: 1vw;
 }
 
 .courses-card li{
