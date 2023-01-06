@@ -1,5 +1,5 @@
 .background-image{
-    background: url("./images/bg.jpg") repeat;
+    background-image: url('images/bg.jpg');
     height: 200vh;
     width: 100vw;
     z-index: -1;
@@ -7,10 +7,18 @@
 
 .banner{
     background: rgb(26, 25, 25);
-    height: 150px;
+    height: 16vh;
     width: 100vw;
     z-index: 1;
-    margin-top: 40px;
+    margin-top: 4vh;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.role{
+    display: inline-block;
+    color: white;
+    margin: auto;
 }
 
 .headshot{
@@ -21,16 +29,101 @@
 }
 
 .logo{
-    width: 100px;
-    height: 100px;
-    margin-left: 50px;
-    margin-top: 25px;
+    width: 4vw;
+    height: 8vh;
+    margin-top: 4vh;
+    margin-left: 3em;
+    vertical-align: middle;
+}
+
+@media all and (max-width: 1352px){
+    .banner{
+        display: none;
+    }
+}
+
+.left:last-of-type{
+    margin-right: 11em;
+}
+
+.right:first-of-type{
+    margin-left: 11em;
+}
+
+.cardListItem{
+    background-color: transparent;
+    color: white;
+}
+
+.skillsAccordion{
+    width: 80%;
+    margin: auto;
+}
+
+.skill-image{
+    max-width: 20vw;
+}
+
+.accordion-image{
+    margin-right: 1vw;
+    width: 2vw;
+}
+
+.accordion-element{
+    width: 75vw;
+    margin:auto;
 }
 
 
 
-.bannerRight{
-    margin-left: 18vw;
+.accordion-button {
+    background-color: darkgrey;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion{
+    margin-top: 2vh;
+}
+
+.bottom-section{
+    margin-top: 20vh;
+}
+
+.school-card{
+    margin-top: 30vh;
+    display: inline-block;
+    align-items: center;
+    background: transparent;
+    border: 2px solid black;
+    width: 30vw;
+}
+
+.about-card{
+    border: 2px solid black;
+    display: inline-block;
+    background: transparent;
+    width: 35vw;
+    height: 70vh;
+    margin-top: 40vh;
+    margin-left: 2vw;
+    color: white;
+}
+
+.courses-card{
+    border: 2px solid black;
+    display: inline-block;
+    background: transparent;
+    width: 30vw;
+    color: white;
+    margin-top: 30vh;
+    margin-left: 2vw;
+}
+
+.courses-card li{
+    font-size: .9em;
 }
 
 
