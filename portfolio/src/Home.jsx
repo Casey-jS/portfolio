@@ -4,19 +4,16 @@ import {Card, Col, Row, Container, ListGroup} from 'react-bootstrap'
 
 function Banner(){
     return <>
-        <div className="position-absolute banner">
-            <span className="bannerLeft">
-                {["python", "c", "java", "cpp", "swift"].map((image, i) => (
-                    <img className='logo left' src={image + ".png"} key={i} />
-                ))}
-             </span>
-            <span className='bannerRight'>
-                {["react", "javascript", "flask", "css-html", "bootstrap"].map((image, i) => (
-                    <img className='logo right' src={image + ".png"} key={i} />
-                ))}
-             </span>
-        </div>
-        
+        <div className="banner">    
+            {["python", "c", "java", "cpp", "swift"].map((image, i) => (
+                <span className='logo'><img src={image + ".png"} key={i} /></span>
+            ))}
+            <img className='headshot' src="headshot.jpg" />
+            {["react", "javascript", "flask", "css-html", "bootstrap"].map((image, i) => (
+                <span className='logo'><img src={image + ".png"} key={i} /></span>
+            ))}
+             
+        </div>  
     </>
 }
 
@@ -138,7 +135,7 @@ export default function Home(){
                 </div>      
                 <Row className='justify-content-md-center'>
                     <Banner />
-                    <img className='headshot' src="headshot.jpg" />
+                    
                 </Row>
                 <Row>
 
