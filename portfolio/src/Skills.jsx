@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 function AbyssProject(){
     return (
         <Card>
-            <Card.Img className='skill-image mx-auto' variant='top' src='/abyss.png' />
+            <Card.Img className='skill-image mx-auto' variant='top' src={require('./images/abyss.png')} />
             <Card.Title className='mx-auto'>Neon Abyss Item Finder</Card.Title>
             <ListGroup className='list-group-flush'>
                 <ListGroup.Item>Utility for the rogue-like PC game <i>Neon Abyss</i></ListGroup.Item>
@@ -61,7 +61,7 @@ function NBACard(){
     return (
         <Card bg='dark' className='text-white'>
             <Card.Title className='text-white text-center'>NBA Stats Tracker</Card.Title>
-            <Card.Img className='skill-image m-auto' src='/react.png'></Card.Img>
+            <Card.Img className='skill-image m-auto' src={require('./images/react.png')}></Card.Img>
             <Card.Subtitle className='m-auto text-white'>NBA Sports Betting/Fantasy Companion</Card.Subtitle>
             <Card.Text>
                 <h3>Features</h3>
@@ -73,12 +73,11 @@ function NBACard(){
 export default function Skills(){
     return (
         <>
-        <img className='position-relative position-fixed' src='/bg.jpg'></img>
         <Container className='position-absolute justify-content-md-center' style={{maxWidth: "100%", maxHeight: "100%"}}>
             <h1 className='text-center text-white'>My Skills</h1>
             <Accordion>
                 <Accordion.Item  className='accordion-element' eventKey="0">
-                    <Accordion.Header><img src='/python.png' className='accordion-image'></img>Python</Accordion.Header>
+                    <Accordion.Header><img src={require('./images/python.png')} className='accordion-image'></img>Python</Accordion.Header>
                     <Accordion.Body>
                         <p>I have used Python for a little over 2 years. It is my language of choice when given a small-scale project to complete. <br></br> Over the years, I have completed projects in domains such as:</p>
                         <ul>
@@ -99,26 +98,26 @@ export default function Skills(){
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item className='accordion-element' eventKey='1'>
-                    <Accordion.Header><img src='/react.png' className='accordion-image' />JavaScript (React)</Accordion.Header>
+                    <Accordion.Header><img src={require('./images/react.png')} className='accordion-image' />JavaScript (React)</Accordion.Header>
                     <Accordion.Body>
                         <NBACard />
                         
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item className='accordion-element' eventKey='2'>
-                    <Accordion.Header><img src='/java.png' className='accordion-image' />Java</Accordion.Header>
+                    <Accordion.Header><img src={require('./images/java.png')} className='accordion-image' />Java</Accordion.Header>
                 </Accordion.Item>
                 <Accordion.Item className='accordion-element' eventKey='3'>
-                    <Accordion.Header><img src='/c.png' className='accordion-image' /> <img src='/cpp.png' className='accordion-image' />Low Level Systems Programming</Accordion.Header>
+                    <Accordion.Header><img src={require('./images/c.png')} className='accordion-image' /> <img src={require('./images/cpp.png')} className='accordion-image' />Low Level Systems Programming</Accordion.Header>
                 </Accordion.Item>
                 <Accordion.Item className='accordion-element' eventKey='4'>
-                    <Accordion.Header><img src='/css-html.png' className='accordion-image' /> <img src='/bootstrap.png' className='accordion-image' />UI/UX</Accordion.Header>
+                    <Accordion.Header><img src={require('./images/css-html.png')} className='accordion-image' /> <img src={require('./images/bootstrap.png')} className='accordion-image' />UI/UX</Accordion.Header>
                 </Accordion.Item>
                 <Accordion.Item className='accordion-element' eventKey='5'>
-                    <Accordion.Header><img src='/swift.png' className='accordion-image' />Mobile Application Development</Accordion.Header>
+                    <Accordion.Header><img src={require('./images/swift.png')} className='accordion-image' />Mobile Application Development</Accordion.Header>
                 </Accordion.Item>
                 <Accordion.Item className='accordion-element' eventKey='6'>
-                    <Accordion.Header><img src='/csharp.png' className='accordion-image' /> <img src='/github.png' className='accordion-image' /><img src='/vb.png' className='accordion-image' />Miscellaneous</Accordion.Header>
+                    <Accordion.Header><img src={require('./images/csharp.png')} className='accordion-image' /> <img src={require('./images/github.png')} className='accordion-image' /><img src={require('./images/vb.png')} className='accordion-image' />Miscellaneous</Accordion.Header>
                 </Accordion.Item>
 
             </Accordion>

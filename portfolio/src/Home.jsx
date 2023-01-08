@@ -6,11 +6,11 @@ function Banner(){
     return <>
         <div className="banner">    
             {["python", "c", "java", "cpp", "swift"].map((image, i) => (
-                <span className='logo'><img src={image + ".png"} key={i} /></span>
+                <span className='logo'><img src={require('./images/' + image + '.png')} key={i} /></span>
             ))}
-            <img className='headshot' src="headshot.jpg" />
+            <img className='headshot' src={require('./images/headshot.jpg')} />
             {["react", "javascript", "flask", "css-html", "bootstrap"].map((image, i) => (
-                <span className='logo'><img src={image + ".png"} key={i} /></span>
+                <span className='logo'><img src={require('./images/' + image + '.png')} key={i} /></span>
             ))}
              
         </div>  
@@ -21,7 +21,7 @@ function SchoolCard(){
     return <>
         <Card className="text-white school-card">
             <Card.Title style={{fontSize: '3em'}}><u>Education</u></Card.Title>
-            <Card.Img variant="top" src="gv-logo.png" style={{width: "20vw"}}/>
+            <Card.Img variant="top" src={require('./images/gv-logo.png')} style={{width: "20vw"}}/>
             <Card.Body>
                 <Card.Title>Grand Valley State University</Card.Title>
                 <Card.Subtitle>BS Computer Science | 3.43 Overall GPA</Card.Subtitle>
@@ -31,7 +31,7 @@ function SchoolCard(){
                 <ListGroup.Item className='cardListItem'>Twice nominated as an outstanding CS student by my professors</ListGroup.Item>
                 <ListGroup.Item className='cardListItem'>Winter 2021, Winter 2022, Fall 2022 Dean's List</ListGroup.Item>
                 <ListGroup.Item className='cardListItem'>3.73 GPA in Computer Science courses</ListGroup.Item>
-                <ListGroup.Item className='cardListItem'>Completion of several math high level mathematics courses, including physics, (linear algebra?) and discreet mathematics</ListGroup.Item>
+                <ListGroup.Item className='cardListItem'>Completion of several high level mathematics courses, including physics, calculus III (vector algebra, scalar functions) and discrete mathematics</ListGroup.Item>
             </ListGroup>
         </Card>
     
@@ -88,7 +88,7 @@ function CoursesCard(){
                         <li>iOS - Swift</li>
                         <li>Android - Kotlin</li>
                     </ul>
-                    <li>Discreet Mathematics & Computer Organization</li>
+                    <li>Discrete Mathematics & Computer Organization</li>
                     <ul>
                         <li>Binary Mathematics</li>
                         <li>Computer Architecture</li>
